@@ -38,10 +38,10 @@ void udp_server() {
 
 
     sock = socket(AF_INET, SOCK_DGRAM, 0);
-    struct timeval tv;
-    tv.tv_sec = 5;
-    tv.tv_usec = 0;
-    setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+    // struct timeval tv;
+    // tv.tv_sec = 5;
+    // tv.tv_usec = 0;
+    // setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
     bind(sock, (struct sockaddr *)&addr, sizeof(addr));
 
